@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "manuscrito";
+  src:url('../Fuentes/DancingScript-Regular.ttf');
+}
+
+body {
+  font-family: "manuscrito", fantasy;
+  background-color: #02010a;
+  color: white;
+  max-width: 900px;
+  margin-left: 20%;
+  margin-right:20%;
+
+}
+
+.contenedor {
+  text-align: center;
+  padding-top: 4vh;
+  min-height: 8vh;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+ -moz-border-radius: 10px 10px 0 0;  /* Mozilla cirus for*/
+ -webkit-border-radius: 10px 10px 0 0; /*Safari */
+}
+
+.c1{
+  width: 60%;text-align: left;
+    text-shadow: 2px 3px 2px #02010a;
+}
+.c2{
+  text-align: right;
+  width: 40%;
+}
+.c2 a{text-decoration: none;  color: white;}
+
+.imgp { background-color: #82c3a6;}
+.imgp img{
+  width: 86%;
+  max-width: 100%;
+  -webkit-filter: drop-shadow(2px 3px 2px #02010a);
+  filter: drop-shadow(2px 3px 2px #02010a);
+  margin-left: 7%;
+  text-align: center;
+}
+
+.cont2dib {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+  border: 1px solid #d5c75f;
+}
+.img1{
+  width: 45%;
+  margin-left: 5%;
+  background-color: blue;
+}
+.img2{
+  width: 45%;
+  margin-right: 5%;
+  background-color: green;
+}
+.img1 img, .img2 img{
+  -webkit-filter: drop-shadow(2px 3px 2px #02010a);
+  filter: drop-shadow(2px 3px 2px #02010a);
+}
+
+.cont2dib img{width: 100%; margin: 0;}
+.pdib{text-align: center;}
+
+@media (min-width:901px) {
+  .img1 {order: 1;}
+  .img2 {order: 2;}
+
+}
+@media (max-width:900px) { 
+  .imgp img, .img1,img1 img, .img2, .c1, .c2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .img1 {order: 1;}
+  .img2 {order: 2;}
+
+}
