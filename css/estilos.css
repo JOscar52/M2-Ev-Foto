@@ -75,7 +75,24 @@ body {
 }
 .cont2dib img{width: 100%; margin: 0;}
 .pdib{text-align: center;}
+/*---------------------------------------*/
 
+.img11, .img12, .img13,
+.img21, .img22, .img23{width: 31.33%;margin: 1%;}
+
+.img11 img{
+   -webkit-filter: blur(10px);
+   filter: blur(10px);
+ }
+.img12 img, .img21 img, .img23 img{
+   -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.img13 img{
+  -webkit-filter: sepia(50%);
+  filter: sepia(90%);
+}
+/*---------------------------------------*/
 .piepag{
   display: flex;
   flex-flow: row wrap;
@@ -112,12 +129,16 @@ body {
   }
 }
 
+.pag1, .pag2, .pag3, .pag4 {
+  font-size: 15px;
+}
+
 @media (max-width:900px)  { /*450px 900*/
   body{
     width: 100%;
     margin: auto;
   }
-  .imgp img, .img1,img1 img, .img2, .c1, .c2 {
+  .imgp img, .img1, .img2, .c1, .c2 {
     width: 100%;
     text-align: center;
     margin: 0;
@@ -126,6 +147,7 @@ body {
     width: 100%;
     text-align: left;
     font-size: 2vw;
+    font-size: 15px;
   }
   .contenedor {
     text-align: center;
@@ -137,6 +159,10 @@ body {
    -moz-border-radius: 10px 10px 0 0;  /* Mozilla cirus for*/
    -webkit-border-radius: 10px 10px 0 0; /*Safari */
   }
+
+  .img11, .img12, .img13,
+  .img21, .img22, .img23{width: 90%;margin: 1%;}
+
   .c1{
     width: 100%;color: white;
     text-align: center;
